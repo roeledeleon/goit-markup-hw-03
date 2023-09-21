@@ -8,15 +8,23 @@
   --SLATE: #434455;
   --dark-bg: var(--NAVY-BLUE);
   --topline-bg: var(--WHITE);
-  --light-bg: (var--CLOUD);
+  --light-bg: var(--CLOUD);
+  --accent-bg: var(--IRIS);
+  --bg-color: var(--WHITE);
+  --primary-text-color: var(--NAVY-BLUE);
+  --secondary-text-color: var(--WHITE);
+  --accent-text-color: var(--IRIS);
 }
 
 body {
+  color: var(--primary-text-color);
+  background-color: var(--bg-color);
+
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
 }
 
-.navigation-list,
+.nav-list,
 .contact-list,
 .features-list,
 .gallery-list,
@@ -28,9 +36,28 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+.nav-list a.current {
+  color: var(--accent-text-color);
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
 .logo,
 .logo-footer {
-  color: var(--IRIS);
+  color: var(--accent-text-color);
   font-family: Raleway;
   font-size: 18px;
   letter-spacing: 0.54px;
@@ -40,11 +67,21 @@ body {
 }
 
 #studio {
-  color: var(--NAVY-BLUE);
+  color: var(--primary-text-color);
 }
 
 #studio-footer {
-  color: var(--WHITE);
+  color: var(--secondary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 .section-main {
@@ -62,13 +99,13 @@ body {
 }
 
 .button-main {
-  background-color: var(--IRIS);
-  color: var(--WHITE);
+  background-color: var(--accent-bg);
+  color: var(--secondary-text-color);
 }
 
 .gallery-title,
 .team-title {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: var(--primary-text-color);
   text-align: center;
 
   font-family: Roboto;
@@ -88,7 +125,7 @@ body {
   /* style */
   border-radius: 4px;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--light-bg);
+  background-color: var(--light-bg);
 }
 
 .filter-list button:hover,
@@ -97,8 +134,8 @@ body {
   align-items: flex-start;
   /*style*/
   border-radius: 4px;
-  background: var(--OCEAN, #404bbf);
-  color: var(--WHITE);
+  background-color: var(--OCEAN, #404bbf);
+  color: var(--secondary-text-color);
 }
 
 .project.list > li.project {
@@ -108,7 +145,7 @@ body {
   list-style: none;
 
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
+  background-color: var(--WHITE, #fff);
 }
 
 .project-image {
