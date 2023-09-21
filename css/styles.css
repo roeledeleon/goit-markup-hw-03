@@ -34,13 +34,7 @@ body {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
-}
-
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  border: 0px;
 }
 
 .nav-list a {
@@ -49,10 +43,16 @@ body {
 .nav-list a.current {
   color: var(--accent-text-color);
 }
-
-.contact-list a {
-  text-decoration: none;
+.nav-list a.link {
   color: var(--primary-text-color);
+}
+
+.nav-list a.item {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
 
 .logo,
@@ -74,6 +74,7 @@ body {
   color: var(--secondary-text-color);
 }
 
+/*
 h1,
 h2,
 h3,
@@ -83,6 +84,7 @@ h6,
 p {
   margin: 0;
 }
+*/
 
 .section-main {
   background-color: var(--dark-bg);
@@ -98,9 +100,14 @@ p {
   letter-spacing: 1.12px;
 }
 
-.button-main {
+.btn {
   background-color: var(--accent-bg);
   color: var(--secondary-text-color);
+
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .gallery-title,
