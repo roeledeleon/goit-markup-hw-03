@@ -13,6 +13,7 @@
   --bg-color: var(--WHITE);
   --primary-text-color: var(--NAVY-BLUE);
   --secondary-text-color: var(--WHITE);
+  --bottom-text-color: var(--SLATE);
   --accent-text-color: var(--IRIS);
 }
 
@@ -23,8 +24,67 @@ body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-header {
-  border: none;
+
+/* General Styles */
+.list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  border: 0px;
+}
+
+.current {
+  color: var(--accent-text-color);
+  text-decoration: none;
+}
+
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.item {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.container {
+  width: 1158px;
+}
+
+.section-title {
+  color: var(--primary-text-color);
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.top-text {
+  color: var(--primary-text-color);
+
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.bottom-text {
+  color: var(--bottom-text-color);
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
 
 h1,
@@ -36,36 +96,15 @@ h6,
 a {
   margin: 0;
 }
+/* End of General Styles */
 
-.nav-list,
-.contact-list,
-.features-list,
-.gallery-list,
-.team-list,
-.filter-list,
-.project-list {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
-  border: 0px;
+/* HEADER Styles */
+header {
+  border: none;
 }
 
-.nav-list a {
-  text-decoration: none;
-}
-.nav-list a.current {
-  color: var(--accent-text-color);
-}
-.nav-list a.link {
-  color: var(--primary-text-color);
-}
-
-.nav-list a.item {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+.container {
+  width: 1158px;
 }
 
 .logo,
@@ -86,24 +125,37 @@ a {
 #studio-footer {
   color: var(--secondary-text-color);
 }
+/* End of HEADER Styles */
 
-.section-main {
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.main {
   background-color: var(--dark-bg);
   color: var(--WHITE);
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .main-title {
-  text-align: center;
   font-family: Roboto;
   font-size: 56px;
-  line-height: 60px;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
   letter-spacing: 1.12px;
+  padding-bottom: 30px;
 }
 
 .button-main {
   background-color: var(--accent-bg);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--secondary-text-color);
+
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
 
   font-family: inherit;
   cursor: pointer;
@@ -111,17 +163,8 @@ a {
   border-radius: 4px;
 }
 
-.gallery-title,
-.team-title {
-  color: var(--primary-text-color);
-  text-align: center;
-
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
+.team {
+  background-color: var(--CLOUD);
 }
 
 .filter-list > button {
