@@ -18,38 +18,44 @@
     <title>WEBSTUDIO</title>
   </head>
   <body>
-    <header class="header-elements container">
+    <header class="header-elements">
       <!-- Navigation -->
-      <nav class="navigation">
-        <ul class="nav-list list">
-          <li>
+      <nav class="navigation nav-line">
+        <div class="container">
+          <ul class="nav-list list">
             <!-- site logo -->
-            <a class="logo" href="./index.html"
-              >Web<span id="studio">Studio</span>
-            </a>
-          </li>
-          <li>
-            <a href="./index.html" class="nav-link item link">Site</a>
-          </li>
-          <li>
-            <a href="./porfolio.html" class="nav-link item current"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a href="#" class="nav-link item link">Contact</a>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="nav-link contact link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="nav-link contact link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="logo-main logo" href="./index.html"
+                >Web<span id="studio">Studio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link item link">Site</a>
+            </li>
+            <li class="nav-item">
+              <a href="./porfolio.html" class="nav-link item current"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link item link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <ul class="contact-list list">
+            <li class="contact-item">
+              <a href="mailto:info@devstudio.com" class="nav-link contact link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="tel:+110001111111" class="nav-link contact link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -57,120 +63,30 @@
         <div class="container">
           <h1 hidden>Filter List</h1>
           <ul class="filter-list list">
-            <li><button class="btn filter-all" type="button">All</button></li>
             <li>
-              <button class="btn filter-website" type="button">Web Site</button>
-            </li>
-            <li><button class="btn filter-app" type="button">App</button></li>
-            <li>
-              <button class="btn filter-design" type="button">Design</button>
-            </li>
-            <li>
-              <button class="btn filter-marketing" type="button">
-                Marketing
+              <button class="filter-item btn filter-all" type="button">
+                All
               </button>
             </li>
-          </ul>
-          <h2 hidden>Project List</h2>
-          <ul class="project-list list">
-            <!--APP | Bank App Interface Concept-->
-            <li class="project app">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card11.jpg"
-                  alt="Bank App Interface Concept"
-                />
-              </a>
-              <h3 class="project-name top-text">Bank App Interface Concept</h3>
-              <p class="project-type bottom-text">App</p>
+            <li>
+              <button class="filter-item btn filter-website" type="button">
+                Web Site
+              </button>
             </li>
-            <!--Cashless Payment-->
-            <li class="project marketing">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card12.jpg"
-                  alt="Cashless Payment"
-                />
-              </a>
-              <h3 class="project-name top-text">Cashless Payment</h3>
-              <p class="project-type bottom-text">Marketing</p>
+            <li>
+              <button class="filter-item btn filter-app" type="button">
+                App
+              </button>
             </li>
-            <!--Meditation App-->
-            <li class="project app">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card13.jpg"
-                  alt="Meditation App"
-                />
-              </a>
-              <h3 class="project-name top-text">Meditation App</h3>
-              <p class="project-type bottom-text">App</p>
+            <li>
+              <button class="filter-item btn filter-design" type="button">
+                Design
+              </button>
             </li>
-            <!--Taxi Service-->
-            <li class="project marketing">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card21.jpg"
-                  alt="Taxi Service"
-                />
-              </a>
-              <h3 class="project-name top-text">Taxi Service</h3>
-              <p class="project-type bottom-text">Marketing</p>
-            </li>
-            <!--Screen Illustrations-->
-            <li class="project design">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card22.jpg"
-                  alt="Screen Illustrations"
-                />
-              </a>
-              <h3 class="project-name top-text">Screen Illutrations</h3>
-              <p class="project-type bottom-text">Design</p>
-            </li>
-            <!--Online Course-->
-            <li class="project marketing">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card23.jpg"
-                  alt="Online Course"
-                />
-              </a>
-              <h3 class="project-name top-text">Online Course</h3>
-              <p class="project-type bottom-text">Marketing</p>
-            </li>
-            <!--Instagram Stories Concept-->
-            <li class="project design">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card31.jpg"
-                  alt="Instagram Stories Concept"
-                />
-              </a>
-              <h3 class="project-name top-text">Instagram Stories Concept</h3>
-              <p class="project-type bottom-text">Design</p>
-            </li>
-            <!--Organic Food-->
-            <li class="project website">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card32.jpg"
-                  alt="Organic Food"
-                />
-              </a>
-              <h3 class="project-name">Organic Food</h3>
-              <p class="project-type">Web Site</p>
-            </li>
-            <!--Fresh Coffee-->
-            <li class="project website">
-              <a class="project-image" href="#">
-                <img
-                  src="./images/portfolio/imgproject-card33.jpg"
-                  alt="Fress Coffee"
-                />
-              </a>
-              <h3 class="project-name top-text">Fresh Coffee</h3>
-              <p class="project-title bottom-text">Web Site</p>
+            <li>
+              <button class="filter-item btn filter-marketing" type="button">
+                Marketing
+              </button>
             </li>
           </ul>
         </div>
