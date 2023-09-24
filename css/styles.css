@@ -300,9 +300,9 @@ p {
   flex-shrink: 0;
 }
 .project-list {
-  padding-top: calc(5 * var(--section-item-gap));
   display: flex;
   flex-wrap: wrap;
+  padding-top: calc(5 * var(--section-item-gap));
   margin-top: calc(-1 * var(--section-item-gap));
   margin-left: calc(-1 * var(--section-item-gap));
 }
