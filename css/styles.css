@@ -57,12 +57,12 @@ body {
 
 .container {
   width: 1158px;
-  margin: 0 auto;
+  margin: auto;
 }
 .half-container {
   width: 579px;
   height: 72px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .section-title {
